@@ -80,7 +80,7 @@ arch_and_os() {
 	elif [ "$os" == "linux" ] && [ "$arch" == "aarch64" ]; then
 		echo "aarch64-unknown-linux-gnu"
 	elif [ "$os" == "linux" ] && [ "$arch" == "x86_64" ]; then
-		echo "x86_64-unknown-linux-gnu"
+		echo "x86_64-unknown-linux-musl"
 	else
 		fail "Unsupported platform $os-$arch"
 	fi
